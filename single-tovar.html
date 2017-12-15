@@ -1,0 +1,139 @@
+@@include('_include/header.html')
+<main class="page page--no-vh">
+  <div class="page__container">
+    @@include('_include/pagination.html')
+    <h2 class="title">Запчасти для бытовой техники</h2>
+    <div class="about-tovar">
+      <div class="about-tovar__wrapper">
+        <div class="about-tovar__img">
+          <img class="img-fluid" src="img/product/pic-1.jpg" alt="Товар">
+        </div>
+        <section class="about-tovar__char">
+          <h3 class="about-tovar__title">Агрегат UNE 9213 E (R-22)</h3>
+          <ul class="about-tovar__list">
+            <li>Код товара: 209_0000375</li>
+            <li>Производитель: Россия</li>
+            <li>Наличие: Уточнять у менеджеров</li>
+          </ul>
+        </section>
+      </div>
+      <div class="tovar-price">
+        <div class="price price--center">
+          <del class="price__old">1 490
+            <svg class="icon" width="15" height="15">
+              <use xlink:href="#ruble" />
+            </svg>
+          </del>
+          <p class="price__new">1 290
+            <svg class="icon" width="15" height="15">
+              <use xlink:href="#ruble" />
+            </svg>
+          </p>
+        </div>
+        <form action="#">
+          <div class="quantity">
+            <span class="quantity__btn">-</span>
+            <input class="quantity__control" type="number" value="0" max="3">
+            <span class="quantity__btn">+</span>
+          </div>
+          <button class="add-btn" href="single-tovar.html">
+            <svg class="icon" width="30" height="30">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shopping-cart"></use>
+            </svg>
+            В корзину
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="last-prod">
+  <section class="last-prod__container">
+    <h2 class="title">Последние товары, которые вы просматривали</h2>
+    <div class="last-prod__row">
+      <div class="last-prod__column">
+        <section class="briefly-tov">
+          <a class="briefly-tov__img" href="single-tovar.html">
+            <img class="img-fluid" src="img/product/pic-6.jpg" alt="Последние просмотренные товары">
+          </a>
+          <h3 class="briefly-tov__title">
+            <a href="single-tovar.html">Плитка электрическая ITA (блин) (1000w) 0011</a>
+          </h3>
+          <div class="price price--last-tov">
+            <del class="price__old">1 490
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </del>
+            <p class="price__new">1 290
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </p>
+          </div>
+          <a class="btn" href="#">Подробнее</a>
+        </section>
+      </div>
+      <div class="last-prod__column">
+        <section class="briefly-tov">
+          <a class="briefly-tov__img" href="single-tovar.html">
+            <img class="img-fluid" src="img/product/pic-3.jpg" alt="Последние просмотренные товары">
+          </a>
+          <h3 class="briefly-tov__title">
+            <a href="single-tovar.html">Крестовина MERLONI 010 17601212</a>
+          </h3>
+          <div class="price price--last-tov">
+            <p class="price__new">290
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </p>
+          </div>
+          <a class="btn" href="#">Подробнее</a>
+        </section>
+      </div>
+      <div class="last-prod__column">
+        <section class="briefly-tov">
+          <a class="briefly-tov__img" href="single-tovar.html">
+            <img class="img-fluid" src="img/product/pic-4.jpg" alt="Последние просмотренные товары">
+          </a>
+          <h3 class="briefly-tov__title">
+            <a href="single-tovar.html">Запайщик PFS-200</a>
+          </h3>
+          <div class="price price--last-tov">
+            <del class="price__old">1 690
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </del>
+            <p class="price__new">1 490
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </p>
+          </div>
+          <a class="btn" href="#">Подробнее</a>
+        </section>
+      </div>
+      <div class="last-prod__column">
+        <section class="briefly-tov">
+          <a class="briefly-tov__img" href="#">
+            <img class="img-fluid" src="img/product/pic-5.jpg" alt="Последние просмотренные товары">
+          </a>
+          <h3 class="briefly-tov__title">
+            <a href="">Шестерня на кух. комб. moulinex a77 ms-5821104</a>
+          </h3>
+          <div class="price price--last-tov">
+            <p class="price__new">1 290
+              <svg class="icon" width="15" height="15">
+                <use xlink:href="#ruble" />
+              </svg>
+            </p>
+          </div>
+          <a class="btn" href="#">Подробнее</a>
+        </section>
+      </div>
+    </div>
+  </section>
+</div>
+@@include('_include/footer.html')

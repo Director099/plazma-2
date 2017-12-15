@@ -1,0 +1,28 @@
+.pagination {
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+
+  &__item {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    color: @black;
+    background-color: @white;
+    border: 1px solid @gray-lightest;
+
+    a {
+      color: @black;
+    }
+
+    &.active {
+      background: @color-danger;
+      border: 1px solid @color-danger;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}

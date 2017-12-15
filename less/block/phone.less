@@ -1,0 +1,22 @@
+.phone {
+  &:extend(.col-lg-6);
+  &:extend(.col-sm-9);
+  text-align: center;
+  margin: 0;
+
+  a {
+    display: inline-block;
+    color: @text-color;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .header-icon {
+    fill: @color-danger;
+    margin-right: 3px;
+  }
+
+  @media(min-width: @screen-sm) {
+    text-align: right;
+  }
+}

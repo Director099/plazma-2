@@ -1,0 +1,28 @@
+@@include('_include/header-lk.html')
+<main class="page">
+  <div class="page__container">
+    @@include('_include/pagination.html')
+    <section class="sign">
+      <h2 class="sign__title">Вход в личный кабинет</h2>
+      <form action="#">
+        <div class="form-group">
+          <label class="sign__label">Электронная почта</label>
+          <input type="email" class="sign__control" name="login" required>
+        </div>
+        <div class="form-group">
+          <label class="sign__label">Пароль</label>
+          <input type="password" class="sign__control" name="password" required>
+        </div>
+        <div class="sign__checkbox">
+          <label>
+            <input type="checkbox" name="remember" required checked> Запомнить меня
+          </label>
+          <a href="remember.html" rel="nofollow">Забыли пароль?</a>
+        </div>
+        <button class="btn">Войти</button>
+        <a class="btn btn--color" href="reg.html">Регистрация</a>
+      </form>
+    </section>
+  </div>
+</main>
+@@include('_include/footer.html')

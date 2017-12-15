@@ -1,0 +1,36 @@
+.total {
+  &:extend(.col-sm-3);
+  justify-content: flex-end;
+  display: none;
+
+  &__basket {
+    .total();
+    margin-left: 35px;
+    background: @color-danger;
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 0;
+      color: @white;
+    }
+
+    .shopping-cart {
+      fill: @white;
+    }
+  }
+
+  &__search {
+    .total();
+    padding: 25px;
+    background: @gray-lightest-2;
+
+    .magnifying-glass {
+      fill: @gray-lighter;
+      stroke-width: 2px;
+    }
+  }
+
+  @media(min-width: @screen-lg) {
+    display: flex;
+  }
+}

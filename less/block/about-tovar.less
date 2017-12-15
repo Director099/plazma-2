@@ -1,0 +1,40 @@
+.about-tovar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  background: @white;
+  border: 1px solid @gray-lighter;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 215px;
+    width: 100%;
+  }
+
+  &__char {
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-size: @font-size--h3;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    // min-height: 79px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-basis: 80%;
+  }
+}

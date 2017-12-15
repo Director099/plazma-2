@@ -1,0 +1,24 @@
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+
+  &__item {
+    a {
+      color: @black;
+    }
+
+    &::after {
+      content: "/\00a0";
+      padding: 0 5px;
+      color: #ccc;
+    }
+
+    &:last-child {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

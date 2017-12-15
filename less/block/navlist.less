@@ -1,0 +1,44 @@
+.navlist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  &__item {
+    width: 100%;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: @font-navigation;
+      color: @black;
+      transition: @transition-time;
+
+      &:hover {
+        background: @group-bg;
+      }
+
+      @media(min-width: @screen-lg) {
+        padding: 25px;
+        border-left: 1px solid @gray-lightest;
+      }
+    }
+
+    &:last-child {
+
+      a {
+        @media(min-width: @screen-lg) {
+          border-right: 1px solid @gray-lightest;
+        }
+      }
+    }
+  }
+
+  @media(min-width: @screen-lg) {
+    flex-direction: row;
+  }
+}

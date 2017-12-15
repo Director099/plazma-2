@@ -1,0 +1,27 @@
+.quantity {
+  display: flex;
+  max-width: 100px;
+  margin: 0 auto 20px;
+
+  &__btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid @gray-lighter;
+    margin: 0 -1px;
+    background: @gray-lightest-2;
+  }
+
+  &__control {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid @gray-lighter;
+    outline: none;
+    text-align: center;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

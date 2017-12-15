@@ -1,0 +1,35 @@
+.navigation {
+  position: relative;
+  border-top: 1px solid @gray-lightest;
+  border-bottom: 1px solid @gray-lightest;
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__row {
+    &:extend(.navbar-expand-lg);
+  }
+
+  .navbar-toggler {
+    position: relative;
+    width: 34px;
+    height: 28px;
+    margin: 10px 0;
+    border: 1px solid @black;
+    background: transparent;
+    border-radius: @border-radius;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 22px;
+      height: 2px;
+      background: #221f1f;
+      box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
+    }
+  }
+}

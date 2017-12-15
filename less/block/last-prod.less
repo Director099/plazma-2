@@ -1,0 +1,16 @@
+.last-prod {
+  background: @white;
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__column {
+    &:extend(.col-md-3);
+  }
+}

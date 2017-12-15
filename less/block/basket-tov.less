@@ -1,0 +1,37 @@
+.basket-tov {
+  padding: 0 10px;
+  border: 1px solid @gray-lighter;
+  background: @white;
+
+  &__tovar {
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      right: 0;
+      width: calc(~"100% + 20px");
+      height: 1px;
+      background: @gray-lighter;
+    }
+
+    &:last-child {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: @font-size--h3;
+  }
+
+  &__char {
+    padding: 0 20px;
+  }
+}

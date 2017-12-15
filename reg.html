@@ -1,0 +1,72 @@
+@@include('_include/header-lk.html')
+<main class="page">
+  <div class="page__container">
+    @@include('_include/pagination.html')
+    <section class="registration">
+      <h2 class="sign__title">Регистрация</h2>
+      <form action="#">
+        <ul class="nav" role="tablist">
+          <li role="presentation" aria-expanded="false">
+            <a href="#tab-1" aria-controls="home" role="tab" data-toggle="tab" class="active" aria-expanded="true">Физическое лицо</a>
+          </li>
+          <li role="presentation">
+            <a href="#tab-2" aria-controls="profile" role="tab" data-toggle="tab" class="" aria-expanded="false">Юридическое лицо</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tab-1" aria-expanded="true">
+            <div class="form-group">
+              <input type="text" class="registration__control" placeholder="Фамилия (обязательно)" name="REGISTER[LAST_NAME]" value="" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="registration__control form-set" placeholder="Имя (обязательно)" name="REGISTER[NAME]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="text" class="registration__control form-set" placeholder="Отчество" name="REGISTER[SECOND_NAME]" value="">
+            </div>
+            <div class="form-group">
+              <input type="email" class="registration__control form-set" placeholder="Электронная почта (обязательно)" name="REGISTER[EMAIL]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="registration__control form-set" placeholder="Номер телефона (обязательно)" name="REGISTER[PERSONAL_MOBILE]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="password" class="registration__control form-set" placeholder="Пароль (обязательно)" name="REGISTER[PASSWORD]" value="" autocomplete="off" required="">
+            </div>
+            <div class="form-group">
+              <input type="password" class="registration__control form-set" placeholder="Подтвердите пароль (обязательно)" name="REGISTER[CONFIRM_PASSWORD]" value="" autocomplete="off" required="">
+            </div>
+            <label class="registration__offer">
+              <input type="checkbox" name="REGISTER[UF_OFERTA]" required checked>  Я соглашаюсь с договором <a href="#">оферты</a>
+            </label>
+            <button type="submit" class="btn" name="register_submit_button">Зарегистрироваться</button>
+            <a class="btn btn--color" href="sign.html">Вход</a>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="tab-2" aria-expanded="false">
+            <div class="form-group">
+              <input type="text" class="registration__control form-set" placeholder="Наименование юридического лица (обязательно)" name="REGISTER[UF_ORG_NAME]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="email" class="registration__control form-set" placeholder="Электронная почта (обязательно)" name="REGISTER[EMAIL]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="registration__control form-set" placeholder="Номер телефона (обязательно)" name="REGISTER[PERSONAL_MOBILE]" value="" required="">
+            </div>
+            <div class="form-group">
+              <input type="password" class="registration__control form-set" placeholder="Пароль" name="REGISTER[PASSWORD]" value="" autocomplete="off" required="">
+            </div>
+            <div class="form-group">
+              <input type="password" class="registration__control form-set" placeholder="Подтвердите пароль" name="REGISTER[CONFIRM_PASSWORD]" value="" autocomplete="off" required="">
+            </div>
+            <label class="registration__offer">
+              <input type="checkbox" name="REGISTER[UF_OFERTA]" required checked>  Я соглашаюсь с договором <a href="#">оферты</a>
+            </label>
+            <button type="submit" class="btn" name="register_submit_button">Зарегистрироваться</button>
+            <a class="btn btn--color" href="sign.html">Вход</a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
+@@include('_include/footer.html')

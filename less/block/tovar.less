@@ -1,0 +1,56 @@
+.tovar {
+  &:extend(.col-md-4);
+  &:extend(.col-lg-3);
+  &:extend(.col-sm-6);
+
+  &__link {
+    background: @white;
+    display: block;
+    border: 1px solid @gray-lightest;
+    margin-bottom: 40px;
+    text-align: center;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      // height: 223px;
+    }
+
+    &:hover {
+
+      .tovar__name {
+        background: @color-danger;
+        color: @white;
+      }
+    }
+  }
+
+  &__img {
+    padding: 10px 0;
+  }
+
+  &__name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 55px;
+    margin-bottom: 0;
+    padding: 0 10px;
+    color: @black;
+    transition: @transition-time;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      width: calc(~"100% - 10px");
+      margin: 0 auto;
+      height: 1px;
+      background: @gray-lightest;
+    }
+  }
+}

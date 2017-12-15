@@ -1,0 +1,65 @@
+@@include('_include/header-lk.html')
+<main class="page">
+  <div class="page__container">
+    @@include('_include/pagination.html')
+    <div class="page__row">
+      <div class="col-sm-3">
+        @@include('_include/lk-navigation.html')
+      </div>
+      <div class="col-sm-9">
+        <form class="lk-form">
+          <h3 class="lk-form__title">Контактная информация</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="surname" >Фамилия</label>
+                <input type="text" class="lk-form__control" id="surname" value="Гриценко">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="lk-form__control" id="name" value="Олег">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="" for="twoname">Отчество</label>
+                <input type="text" class="lk-form__control" id="twoname" value="Владимирович">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="" for="Email">Электронная почта</label>
+                <input type="email" class="lk-form__control" id="Email" value="angel@mail.ru">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="" for="tel">Телефон</label>
+                <input type="tel" class="lk-form__control" id="tel" value="8 (800) 555 34 23">
+              </div>
+            </div>
+          </div>
+          <h3 class="lk-form__title lk-form__title--ident">Пароль</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="" for="password">Текущий пароль</label>
+                <input type="email" class="lk-form__control" id="password">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="" for="newPassword">Новый пароль</label>
+                <input type="tel" class="lk-form__control" id="newPassword">
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--form">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('_include/footer.html')

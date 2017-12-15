@@ -1,0 +1,16 @@
+.list-tovar {
+  background: url("img/pater-top.png") no-repeat top, url("img/pater-bottom.png") no-repeat bottom, @gray-lightest-2;
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

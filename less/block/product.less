@@ -1,0 +1,40 @@
+.product {
+  display: flex;
+  background: @white;
+  border: 1px solid @gray-lighter;
+  margin-bottom: 30px;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 257px;
+    width: 100%;
+  }
+
+  &__info {
+    padding: 20px 10px 10px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: @font-size--h3;
+    height: 42px;
+    text-transform: uppercase;
+
+    a {
+      color: @black;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    // min-height: 79px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
