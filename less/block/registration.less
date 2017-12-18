@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   .nav li {
-    width: 50%;
+    width: 100%;
     text-align: center;
 
     a {
@@ -20,6 +20,10 @@
       &.active {
         background: @color-danger;
       }
+    }
+
+    @media(min-width: @screen-sm) {
+      width: 50%;
     }
   }
 

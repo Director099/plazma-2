@@ -44,6 +44,7 @@
       text-align: center;
     }
   }
+
   &--last-tov {
     border-bottom: none;
     padding-bottom: 0;
@@ -55,6 +56,21 @@
 
     .price__new {
       text-align: center;
+    }
+  }
+
+  &--small {
+    min-height: auto;
+    border-bottom: 0;
+
+    .price__old {
+      text-align: center;
+      font-size: @font-size;
+    }
+
+    .price__new {
+      text-align: center;
+      font-size: @font-size;
     }
   }
 }

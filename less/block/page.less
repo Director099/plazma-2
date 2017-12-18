@@ -11,6 +11,18 @@
     &:extend(.row);
   }
 
+  &__back {
+    display: block;
+    color: @black;
+    padding-left: 20px;
+    margin-bottom: 7px;
+    background: url("img/sprite/left-arrow.svg") no-repeat left;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
   &--no-vh {
     min-height: inherit;
   }

@@ -1,0 +1,30 @@
+.lk-menu-order {
+  display: flex;
+  margin-bottom: 7px;
+
+  &__item {
+    width: 100%;
+    color: @black;
+    background: @gray-lighter;
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid @white;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.active {
+      background: @color-danger;
+      color: @white;
+
+      &:hover {
+        color: @white;
+      }
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}

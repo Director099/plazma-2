@@ -3,87 +3,33 @@
   <div class="page__container">
     @@include('_include/pagination.html')
     <div class="page__row">
-      <div class="col-sm-3">
-        @@include('_include/lk-navigation.html')
-      </div>
-			<div class="col-md-9">
-				<div class="lk-menu-flex">
-          <a href="lk-purchases.html" class="active lk-menu">
-            <span class="name-title">Текущий</span>
-          </a>
-          <a href="#" class="lk-menu">
-            <span class="name-title">Завершенные</span>
-          </a>
-          <a href="#" class="lk-menu">
-            <span class="name-title">Отмененные</span>
-          </a>
-        </div>
-        <div class="content-set">
-          <h2 class="title-status">Текущие заказы</h2>
-          <div class="order-status">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <p class="">Заказ №19 от 27.02.17, 3 товара на сумму 1 000 000 руб.</p>
-                      <p class=" color-data"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p>
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    <fieldset>
-                      <legend>Оплата</legend>
-                      <strong>Счет №17/1 от 24.02.17, Наличные средства <span class="status-result">Ожидание оплаты</span></strong>
-                      <p>Сумма к оплате по 100 000 руб</p>
-                    </fieldset>
-                    <fieldset>
-                      <legend>Доставка</legend>
-                      <strong>Отгрузка №17/1, Стоимость доставки 3 000 руб <span class="denial">Не отгружено</span></strong>
-                      <p>Статус отгрузки: <span class="status-result">Ожидает отгрузки</span></p>
-                      <p>Служба доставки: СДЭК</p>
-                      <p>Индификатор отправителя: <span>123456789</span></p>
-                    </fieldset>
-                    <div class="btn-order">
-                      <a class="more" href="lk-more-order.html">Подробнее о заказе</a>
-                      <div class="btn-order-return">
-                        <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i> Повторить заказ</a>
-                        <a href="#">Отменить заказ</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <p class="">Заказ №19 от 27.02.17, 5 товара на сумму 10 000 000 руб.</p>
-                      <p class=" color-data"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p>
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    <fieldset>
-                      <legend>Оплата</legend>
-                      <strong>Счет №17/1 от 24.02.17, Наличные средства <span class="status-result">Ожидание оплаты</span></strong>
-                      <p>Сумма к оплате по 100 000 руб</p>
-                    </fieldset>
-                    <fieldset>
-                      <legend>Доставка</legend>
-                      <strong>Отгрузка №17/1, Стоимость доставки 3 000 руб <span class="denial">Не отгружено</span></strong>
-                      <p>Статус отгрузки: <span class="status-result">Ожидает отгрузки</span></p>
-                      <p>Служба доставки: СДЭК</p>
-                      <p>Индификатор отправителя: <span>123456789</span></p>
-                    </fieldset>
-                    <div class="btn-order">
-                      <a class="more" href="lk-more-order.html">Подробнее о заказе</a>
-                      <div class="btn-order-return">
-                        <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i> Повторить заказ</a>
-                        <a href="#">Отменить заказ</a>
-                      </div>
+      @@include('_include/lk-navigation.html')
+			<div class="col-lg-9">
+        @@include('_include/lk-menu-order.html')
+        <div class="order-set">
+          <h2 class="order-set__title">Текущие заказы</h2>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-group__common">
+              <a class="panel-group__title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Заказ №19 от 27.02.17, 2 товара на сумму 1 000 000 руб.</a>
+              <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-1">
+                <div class="order-panel">
+                  <section class="order-panel__group">
+                    <h3 class="order-panel__title">Оплата</h3>
+                    <strong>Счет №17/1 от 24.02.17, Наличные средства <span class="status-result status-result--exelent">Оплачено</span></strong>
+                    <p>Сумма к оплате по счету: 100 000 руб</p>
+                  </section>
+                  <!-- <section class="order-panel__group">
+                    <h3 class="order-panel__title">Доставка</h3>
+                    <strong>Отгрузка №17/1, Стоимость доставки 3 000 руб <span class="status-result status-result--warning">Не отгружено</span></strong>
+                    <p>Статус отгрузки: <span class="status-result status-result--warning">Ожидает отгрузки</span></p>
+                    <p>Служба доставки: СДЭК</p>
+                    <p>Индификатор отправителя: <span>123456789</span></p>
+                  </section> -->
+                  <div class="order-panel__link">
+                    <a href="lk-more-order.html">Подробнее о заказе</a>
+                    <div class="order-panel__return">
+                      <a href="lk-basket.html">Повторить заказ</a>
+                      <a href="#">Отменить заказ</a>
                     </div>
                   </div>
                 </div>

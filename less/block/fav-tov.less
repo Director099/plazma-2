@@ -2,6 +2,7 @@
   background: @white;
   padding: 10px;
   border: 1px solid @gray-lighter;
+  margin-bottom: 30px;
 
   &__img {
     display: flex;
@@ -38,5 +39,9 @@
   .price {
     margin-bottom: 0;
     // padding-bottom: 0;
+  }
+
+  @media(min-width: @screen-sm) {
+    margin-bottom: 0;
   }
 }

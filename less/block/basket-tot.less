@@ -1,0 +1,35 @@
+.basket-tot {
+  display: flex;
+  justify-content: space-between;
+  background: @white;
+  padding: 10px 20px;
+  border: 1px solid @gray-lighter;
+  border-top: none;
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 80%;
+    padding: 0 10px;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  &__total {
+    position: relative;
+    flex-basis: 20%;
+    min-width: 175px;
+    padding-left: 20px;
+    border-left: 1px solid @gray-lightest;
+    margin-bottom: 0;
+    color: @color-danger;
+    text-align: center;
+    font-size: 30px;
+
+    .icon {
+      fill: @color-danger;
+    }
+  }
+}

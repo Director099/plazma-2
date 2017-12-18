@@ -1,5 +1,5 @@
 body {
-  font: 300 @font-size "Roboto", "Arial", sans-serif;
+  font: 400 @font-size "Roboto", "Arial", sans-serif;
   color: @text-color;
 }
 
@@ -29,6 +29,7 @@ img {
   color: @white;
   cursor: pointer;
   border-radius: 0px;
+  transition: @transition-time;
 
   &--ident {
     margin: 0 -10px;
@@ -44,6 +45,11 @@ img {
     margin: 20px auto 0;
   }
 
+  &--cancel {
+    background: transparent;
+    color: @black;
+  }
+
   &:hover {
     background: darken(@color-danger, 15%);
     color: @white;
@@ -51,6 +57,44 @@ img {
 
   &.btn--color:hover {
     background: darken(@gray-dark, 5%);
+  }
+
+  &.btn--cancel:hover {
+    background: @white;
+    color: @black;
+    text-decoration: underline;
+  }
+}
+
+.btn-favorite {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  background: @gray-lightest-2;
+  color: @black;
+
+  .icon {
+    fill: @white;
+    stroke: @black;
+    margin-right: 5px;
+    transition: @transition-time;
+  }
+
+  &--single {
+    max-width: 120px;
+    margin-top: 55px;
+  }
+
+  &:hover {
+    color: @black;
+    background: darken(@gray-lightest-2, 5%);
+  }
+
+  &.active {
+    .icon {
+      stroke: transparent;
+      fill: @color-danger;
+    }
   }
 }
 
@@ -66,6 +110,7 @@ img {
   color: @white;
   cursor: pointer;
   border-radius: 0px;
+  border: none;
 
   .icon {
     fill: @white;
@@ -84,75 +129,3 @@ img {
 .title {
   .title();
 }
-
-// старье
-
-.lk-menu-flex {
-  display: flex;
-  margin-bottom: 7px;
-}
-
-.lk-menu-flex a {
-  width: 33.3333%;
-  color: @white;
-  background: @gray-lighter;
-  text-align: center;
-  padding: 20px 0;
-
-  &.active {
-    background: @color-danger;
-  }
-}
-
-.content-set {
-  background: #fff;
-  padding: 10px 15px 15px;
-  border-top: 5px solid #f1f1f1;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
-  border-radius: 2px;
-  transition: all 250ms ease-out;
-  margin-bottom: 30px;
-}
-.panel-body {
-  padding: 20px;
-  border: 1px solid @gray-lighter;
-  border-top: 0px solid;
-}
-.panel-title  {
-  margin: 0;
-}
-
-.panel-title a {
-     text-decoration: none;
-    font-size: 14px;
-    color: @black;
-}
-
-.panel-title a p {
-  margin-bottom: 0;
-}
-
-.panel-heading {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  padding: 15px;
-}
-
-.panel.panel-default {
-  margin-bottom: 10px;
-}
-
-legend {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: inherit;
-    color: #333;
-    border: 0;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-

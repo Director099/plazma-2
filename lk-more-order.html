@@ -1,0 +1,142 @@
+@@include('_include/header-lk.html')
+<main class="page">
+  <div class="page__container">
+    @@include('_include/pagination.html')
+    <div class="page__row">
+      @@include('_include/lk-navigation.html')
+      <div class="col-lg-9">
+        <a class="page__back" href="lk-purchases.html">Вернуться к списку заказов</a>
+        <h2>Заказ №17 от 24.02.2017</h2>
+        <ul class="nav-order nav" id="myTab" role="tablist">
+          <li class="">
+            <a class="nav-order__link active" data-toggle="tab" href="#tab-0" role="tab"  aria-selected="true">Информация</a>
+          </li>
+          <li class="">
+            <a class="nav-order__link"  data-toggle="tab" href="#tab-1" role="tab"  aria-selected="false">Параметры оплаты</a>
+          </li>
+          <li class="">
+            <a class="nav-order__link" data-toggle="tab" href="#tab-2" role="tab"  aria-selected="false">Параметры отгрузки</a>
+          </li>
+          <li class="">
+            <a class="nav-order__link" data-toggle="tab" href="#tab-3" role="tab"  aria-selected="false">Содержимое заказа</a>
+          </li>
+        </ul>
+        <div class="tab-content order-set" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab-0" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="info-text">
+                  <span>Логин:</span>
+                  <strong>angel@mail.ru</strong>
+                </p>
+              </div>
+              <div class="col-sm-3">
+                <p class="info-text">
+                  <span>Текущий статус:</span>
+                  <strong>(24.02.2017) Ожидает отгрузки</strong>
+                </p>
+              </div>
+              <div class="col-sm-2">
+                <p class="info-text">
+                  <span>Сумма:</span>
+                  <strong>676 780</strong>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p class="info-text">
+                  <a class="btn" href="lk-basket.html">Повторить заказ</a>
+                  <a href="#" class="btn btn--cancel">Отменить</a>
+                </p>
+              </div>
+            </div>
+            <h4 class="order-set__title">Информация о пользователе</h4>
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="info-text">
+                  <span>Логин:</span>
+                  <strong>angel@mail.ru</strong>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <p class="info-text">
+                  <span>E-mail адрес</span>
+                  <a class="email-block" href="#">angel@mail.ru</a>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <p class="info-text">
+                  <span>Тип плательщика:</span>
+                  <strong>Физическое лицо</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-1" role="tabpanel">
+            <p class="alert alert-info">
+              Счет для оплаты будет выставлен после обработки заказа нашим менеджером
+            </p>
+            <div class="order-set__score">
+              <strong>Счет №17 от 24.02.17 Наличные</strong>
+              <p>Сумма к оплате по счету 900 000 руб.</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-2" role="tabpanel">
+            <div class="order-set__delivery">
+              <div class="order-set__img">
+                <img class="img-fluid" src="img/box.png" alt="Служба доставки">
+              </div>
+              <div class="order-set__info">
+                <strong>Отгрузка №19/1 от 28.02.2017, стоимость доставки 0</strong>
+                <p>Служба доставки: Без доставки</p>
+                <p>Статус отгрузки: Отгружен</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-3" role="tabpanel">
+            <section class="subject">
+              <a class="subject__img" href="single-tovar.html">
+                <img class="img-fluid" src="img/product/cat-pic-1.jpg" alt="Товар">
+              </a>
+              <h3 class="subject__title">Бензогенератор Kipor KGE6500E3</h3>
+              <p class="price price--small">
+                <del class="price__old ">48 190
+                  <svg class="icon" width="10" height="10">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+                  </svg>
+                </del>
+                <span class="price__new">38 190
+                  <svg class="icon" width="10" height="10">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="subject__total">1 шт</p>
+              <p class="subject__total">38 190</p>
+            </section>
+            <section class="subject">
+              <a class="subject__img" href="single-tovar.html">
+                <img class="img-fluid" src="img/product/cat-pic-1.jpg" alt="Товар">
+              </a>
+              <h3 class="subject__title">Бензогенератор Kipor KGE6500E3</h3>
+              <p class="price price--small">
+                <del class="price__old ">48 190
+                  <svg class="icon" width="10" height="10">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+                  </svg>
+                </del>
+                <span class="price__new">38 190
+                  <svg class="icon" width="10" height="10">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="subject__total">1 шт</p>
+              <p class="subject__total">38 190</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('_include/footer.html')
