@@ -20,6 +20,7 @@
   }
 
   &__search {
+    position: relative;
     .total();
     padding: 25px;
     background: @gray-lightest-2;
@@ -27,6 +28,11 @@
     .magnifying-glass {
       fill: @gray-lighter;
       stroke-width: 2px;
+    }
+
+    input {
+      position: absolute;
+      left: 0;
     }
   }
 
