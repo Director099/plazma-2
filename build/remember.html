@@ -67,14 +67,16 @@
           <a href="#">+7 (347) 291-27-17</a>
         </p>
         <div class="total">
-          <a class="total__search" href="search.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <svg class="magnifying-glass" width="45" height="45">
-              <use xlink:href="#magnifying-glass"/>
-            </svg>
-            <!-- <input type="text" placeholder="ads"> -->
-          </a>
+          <form class="total__search" action="search.html" tabindex="0">
+            <input type="text" placeholder="Пойск по сайту">
+            <button type="submit">
+              <svg class="magnifying-glass" width="25" height="25">
+                <use xlink:href="#magnifying-glass"/>
+              </svg>
+            </button>
+          </form>
           <a class="total__basket" href="lk-basket.html">
-            <svg class="shopping-cart" width="45" height="45">
+            <svg class="shopping-cart" width="25" height="25">
               <use xlink:href="#shopping-cart"/>
             </svg>
             <p><span>2</span> товаров</p>
