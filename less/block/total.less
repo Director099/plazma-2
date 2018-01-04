@@ -20,13 +20,52 @@
   }
 
   &__search {
+    position: relative;
     .total();
-    padding: 25px;
     background: @gray-lightest-2;
 
     .magnifying-glass {
       fill: @gray-lighter;
       stroke-width: 2px;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      position: absolute;
+      left: 0;
+      right: inherit;
+      width: 0%;
+      padding: 10px;
+      height: 100%;
+      border: 1px solid @gray-lightest;
+      border-right: none;
+      transition: @transition-time;
+      opacity: 0;
+
+      &:focus {
+        position: absolute;
+        left: -515px;
+        width: 605%;
+        outline: none;
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      input {
+        position: absolute;
+        left: -514px;
+        width: 605%;
+        outline: none;
+        opacity: 1;
+      }
     }
   }
 
