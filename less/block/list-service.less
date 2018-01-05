@@ -1,0 +1,22 @@
+.list-service {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      margin-top: -2px;
+      width: 4px;
+      height: 4px;
+      background: red;
+      border-radius: 50%;
+    }
+  }
+}

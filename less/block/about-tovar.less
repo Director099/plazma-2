@@ -1,6 +1,7 @@
 .about-tovar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 15px 10px;
   background: @white;
   border: 1px solid @gray-lighter;
@@ -9,12 +10,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 215px;
     width: 100%;
+
+    @media(min-width: @screen-md) {
+      max-width: 215px;
+    }
   }
 
   &__char {
+    width: 100%;
     padding: 0 15px;
+    margin: 15px 0;
+    text-align: center;
+
+    @media(min-width: @screen-sm) {
+      text-align: left;
+      margin: 0;
+    }
   }
 
   &__title {
@@ -35,7 +47,16 @@
 
   &__wrapper {
     display: flex;
-    flex-basis: 80%;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media(min-width: @screen-sm) {
+      flex-wrap: nowrap;
+    }
+
+    @media(min-width: @screen-md) {
+      width: 70%;
+    }
   }
 
   @media(min-width: @screen-md) {

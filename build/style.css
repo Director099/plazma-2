@@ -5423,6 +5423,7 @@ img {
 .about-tovar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 15px 10px;
   background: #ffffff;
   border: 1px solid #cccccc;
@@ -5431,11 +5432,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 215px;
   width: 100%;
 }
 .about-tovar__char {
+  width: 100%;
   padding: 0 15px;
+  margin: 15px 0;
+  text-align: center;
 }
 .about-tovar__title {
   font-size: 18px;
@@ -5451,31 +5454,19 @@ img {
 }
 .about-tovar__wrapper {
   display: flex;
-  flex-basis: 80%;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .tovar-price {
-  flex-basis: 20%;
-  padding-left: 20px;
-  border-left: 1px solid #e6e6e6;
-  min-width: 165px;
+  width: 100%;
 }
 .tovar-price .add-btn {
-  margin: 0 auto;
+  margin-left: inherit;
 }
-.tovar-price__delete {
+.tovar-price__btn-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  margin-bottom: 20px;
-  width: 100%;
-  outline: none;
-}
-.tovar-price__delete .icon {
-  margin-left: 5px;
-}
-.tovar-price__delete:focus {
-  outline: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .quantity {
   display: flex;
@@ -5731,12 +5722,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 155px;
   width: 100%;
 }
 .basket-tov__tovar {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 0px;
 }
 .basket-tov__tovar::after {
@@ -5756,8 +5747,10 @@ img {
   font-size: 18px;
 }
 .basket-tov__char {
-  flex-basis: 60%;
-  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+  margin: 20px 0;
 }
 .fav-tov {
   background: #ffffff;
@@ -6008,7 +6001,9 @@ img {
 }
 .basket-tot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background: #ffffff;
   padding: 10px 0px;
   border: 1px solid #cccccc;
@@ -6016,19 +6011,17 @@ img {
 }
 .basket-tot__btn {
   display: flex;
-  justify-content: flex-end;
-  flex-basis: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0 10px;
 }
 .basket-tot__btn a {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 .basket-tot__total {
   position: relative;
-  flex-basis: 20%;
-  min-width: 175px;
-  padding-left: 20px;
-  border-left: 1px solid #e6e6e6;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 0;
   color: #df061e;
   text-align: center;
@@ -6106,6 +6099,65 @@ img {
 .search__wrapper {
   border: 1px solid #cccccc;
   margin-bottom: 50px;
+}
+.basket-price {
+  width: 100%;
+}
+.basket-price__delete {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 0;
+  outline: none;
+}
+.basket-price__delete .icon {
+  margin-left: 5px;
+}
+.basket-price__delete:focus {
+  outline: none;
+}
+.content-total {
+  padding-right: 15px;
+}
+.content-total__total {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.content-total__total p {
+  min-width: 120px;
+  text-align: right;
+  margin-bottom: 0;
+}
+.content-total__total strong {
+  text-align: right;
+}
+.content-total__total:last-child {
+  margin-bottom: 0;
+}
+.list-service {
+  padding: 0;
+  list-style-type: none;
+}
+.list-service li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.list-service li::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  width: 4px;
+  height: 4px;
+  background: red;
+  border-radius: 50%;
 }
 @media (min-width: 576px) {
   .container,
@@ -6820,8 +6872,23 @@ img {
   .phone-phooter {
     text-align: right;
   }
+  .about-tovar__char {
+    text-align: left;
+    margin: 0;
+  }
+  .about-tovar__wrapper {
+    flex-wrap: nowrap;
+  }
   .registration .nav li {
     width: 50%;
+  }
+  .basket-tov__img {
+    max-width: 155px;
+  }
+  .basket-tov__char {
+    width: 65%;
+    text-align: left;
+    margin: 0;
   }
   .fav-tov {
     margin-bottom: 0;
@@ -7394,14 +7461,43 @@ img {
   .web-logo {
     text-align: right;
   }
+  .about-tovar__img {
+    max-width: 215px;
+  }
+  .about-tovar__wrapper {
+    width: 70%;
+  }
   .about-tovar {
     flex-wrap: nowrap;
+  }
+  .tovar-price {
+    border-left: 1px solid #e6e6e6;
+    padding-left: 10px;
+    width: 30%;
   }
   .briefly-tov {
     margin-bottom: 0;
   }
+  .basket-tov__char {
+    width: 50%;
+  }
   .nav-order li {
     width: 25%;
+  }
+  .basket-tot__btn {
+    width: 70%;
+    justify-content: flex-end;
+  }
+  .basket-tot__total {
+    width: 25%;
+  }
+  .basket-tot {
+    justify-content: space-between;
+  }
+  .basket-price {
+    width: 25%;
+    border-left: 1px solid #e6e6e6;
+    padding-left: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -8563,6 +8659,9 @@ img {
   }
   .product {
     flex-wrap: nowrap;
+  }
+  .basket-tov__char {
+    width: 55%;
   }
 }
 @media print {

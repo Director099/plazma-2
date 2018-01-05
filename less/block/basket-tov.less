@@ -12,13 +12,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 155px;
+    // max-width: 155px;
     width: 100%;
+
+    @media(min-width: @screen-sm) {
+      max-width: 155px;
+    }
   }
 
   &__tovar {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px 0px;
 
     &::after {
@@ -45,7 +50,23 @@
   }
 
   &__char {
-    flex-basis: 60%;
-    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    margin: 20px 0;
+
+    @media(min-width: @screen-sm) {
+      width: 65%;
+      text-align: left;
+      margin: 0;
+    }
+
+    @media(min-width: @screen-md) {
+      width: 50%;
+    }
+
+    @media(min-width: @screen-xl) {
+      width: 55%;
+    }
   }
 }
