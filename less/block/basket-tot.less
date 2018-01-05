@@ -1,6 +1,8 @@
 .basket-tot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background: @white;
   padding: 10px 0px;
   border: 1px solid @gray-lighter;
@@ -8,21 +10,25 @@
 
   &__btn {
     display: flex;
-    justify-content: flex-end;
-    flex-basis: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 10px;
 
     a {
-      margin: 0 10px;
+      margin: 5px 10px;
+    }
+
+    @media(min-width: @screen-md) {
+      width: 70%;
+      justify-content: flex-end;
     }
   }
 
   &__total {
     position: relative;
-    flex-basis: 20%;
-    min-width: 175px;
-    padding-left: 20px;
-    border-left: 1px solid @gray-lightest;
+    padding-left: 10px;
+    padding-right: 10px;
+    // border-left: 1px solid @gray-lightest;
     margin-bottom: 0;
     color: @color-danger;
     text-align: center;
@@ -31,5 +37,13 @@
     .icon {
       fill: @color-danger;
     }
+
+    @media(min-width: @screen-md) {
+      width: 25%;
+    }
+  }
+
+  @media(min-width: @screen-md) {
+    justify-content: space-between;
   }
 }
