@@ -33,7 +33,83 @@
     <symbol id="close" viewBox="0 0 357 357">
       <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
     </symbol>
+    <symbol id="left-arrow" viewBox="0 0 31.494 31.494">
+      <path d="M10.273 5.009a1.112 1.112 0 0 1 1.587 0 1.12 1.12 0 0 1 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127H3.813l8.047 8.032c.429.444.429 1.159 0 1.587a1.112 1.112 0 0 1-1.587 0L.321 16.532a1.12 1.12 0 0 1 0-1.571l9.952-9.952z" />
+    </symbol>
+    <symbol id="right-arrow" viewBox="0 0 31.49 31.49">
+      <path d="M21.205 5.007a1.112 1.112 0 0 0-1.587 0 1.12 1.12 0 0 0 0 1.571l8.047 8.047H1.111A1.106 1.106 0 0 0 0 15.737c0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587a1.112 1.112 0 0 0 1.587 0l9.952-9.952a1.093 1.093 0 0 0 0-1.571l-9.952-9.953z" />
+    </symbol>
   </svg>
+  <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Товар добавлен в корзину</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body row">
+          <div class="modal-body__img">
+            <img class="img-fluid" src="img/product/pic-1.jpg" alt="Товар">
+          </div>
+          <section class="modal-body__tovar">
+            <h3 class="modal-body__title"><a href="#">Агрегат UNE 9213 E (R-22)</a></h3>
+            <table class="modal-table">
+              <tr>
+                <td>
+                  Цена:
+                </td>
+                <td>
+                  <strong class="">123 019
+                    <svg class="icon" width="17" height="17">
+                      <use xlink:href="#ruble" />
+                    </svg>
+                  </strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Количество: </td>
+                <td>
+                  <div class="quantity">
+                    <span class="quantity__btn">-</span>
+                    <input class="quantity__control" type="number" value="0" max="3">
+                    <span class="quantity__btn">+</span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <div class="modal-body__amount">
+            <div class="modal-body__amount-block">
+              <p class="modal-body__amount-line">В корзине товаров: <span>5</span></p>
+              <p class="modal-body__total">На сумму:
+                <span>8 457 729
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="#ruble" />
+                  </svg>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body__footer">
+          <button class="modal-body__btn" data-dismiss="modal">
+            <svg class="icon" width="16" height="17">
+              <use xlink:href="#left-arrow" />
+            </svg>
+            Вернуться к покупкам
+          </button>
+          <a class="modal-body__link" href="lk-basket.html">
+            Перейти в корзину
+            <svg class="icon" width="16" height="17">
+              <use xlink:href="#right-arrow" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="page-header">
     <div class="page-header__container">
       <p class="personal-area">
