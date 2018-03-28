@@ -5328,12 +5328,6 @@ img {
 .breadcrumb__item:last-child::after {
   display: none;
 }
-.page {
-  background: url("img/pater-top.png") no-repeat top, #f2f2f2;
-  min-height: calc(100vh - 389px);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .page__back {
   display: block;
   color: #000000;
@@ -6255,6 +6249,12 @@ img {
   margin-right: inherit;
   margin-left: auto;
 }
+.bg-dots {
+  background: url("img/pater-top.png") no-repeat top, #f2f2f2;
+  min-height: calc(100vh - 389px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 @media (min-width: 576px) {
   .container,
   .page-header__container,
@@ -6985,9 +6985,6 @@ img {
     width: 65%;
     text-align: left;
     margin: 0;
-  }
-  .fav-tov {
-    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
